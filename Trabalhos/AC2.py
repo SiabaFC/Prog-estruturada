@@ -5,10 +5,14 @@ def calcula_salario():
    
    salario = valor_hora * num_horas 
    salario_liq = salario * (1 - irpf)
-   print( "Seu salário líquido é: R$",salario_liq)
+   
+   if salario_liq < 0:
+       print("Valor informado negativo")
+   else:
+        print( "Seu salário líquido é: R$",salario_liq)
+   
 
 calcula_salario()
-   
    
    
  
